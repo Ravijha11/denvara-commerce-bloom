@@ -41,6 +41,10 @@ export default {
 					DEFAULT: 'hsl(var(--success))',
 					foreground: 'hsl(var(--success-foreground))'
 				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))'
+				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
@@ -48,7 +52,8 @@ export default {
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))',
-					muted: 'hsl(var(--accent-muted))'
+					muted: 'hsl(var(--accent-muted))',
+					vibrant: 'hsl(var(--accent-vibrant))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -77,16 +82,21 @@ export default {
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'medium': 'var(--shadow-medium)',
-				'large': 'var(--shadow-large)'
+				'large': 'var(--shadow-large)',
+				'neon': 'var(--shadow-neon)',
+				'electric': 'var(--shadow-electric)'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-electric': 'var(--gradient-electric)',
+				'gradient-neon': 'var(--gradient-neon)'
 			},
 			fontFamily: {
 				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 				serif: ['Playfair Display', 'ui-serif', 'serif'],
+				display: ['Playfair Display', 'ui-serif', 'serif'],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -116,6 +126,19 @@ export default {
 				'shimmer': {
 					'0%': { transform: 'translateX(-100%)' },
 					'100%': { transform: 'translateX(100%)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { boxShadow: 'var(--shadow-neon)' },
+					'50%': { boxShadow: 'var(--shadow-electric)' }
+				},
+				'bounce-subtle': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-2px)' }
+				},
+				'electric-slide': {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' }
 				}
 			},
 			animation: {
@@ -125,7 +148,10 @@ export default {
 				'fade-in-up': 'fade-in-up 0.6s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
 				'slide-up': 'slide-up 0.4s ease-out',
-				'shimmer': 'shimmer 2s ease-in-out infinite'
+				'shimmer': 'shimmer 2s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
+				'electric-slide': 'electric-slide 3s ease-in-out infinite'
 			}
 		}
 	},

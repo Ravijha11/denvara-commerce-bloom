@@ -13,20 +13,22 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-soft hover:shadow-medium",
         outline:
-          "border border-border bg-background hover:bg-accent hover:text-accent-foreground shadow-soft hover:shadow-medium transition-all duration-200",
+          "border border-border bg-background hover:bg-accent hover:text-accent-foreground shadow-soft hover:shadow-electric transition-all duration-200 hover:scale-105",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-soft hover:shadow-medium",
         ghost: "hover:bg-accent hover:text-accent-foreground transition-colors duration-200",
         link: "text-primary underline-offset-4 hover:underline transition-colors duration-200",
-        premium: "bg-gradient-accent text-accent-foreground font-semibold shadow-medium hover:shadow-large hover:scale-105 transition-all duration-300",
-        hero: "bg-primary text-primary-foreground font-semibold shadow-large hover:bg-primary-hover hover:shadow-large hover:scale-105 transition-all duration-300 border border-primary-hover/20",
-        cart: "bg-accent text-accent-foreground font-medium shadow-soft hover:shadow-medium hover:bg-accent/90 transition-all duration-200",
+        electric: "bg-gradient-accent text-accent-foreground font-semibold shadow-electric hover:shadow-neon hover:scale-105 transition-all duration-300 animate-pulse-glow",
+        hero: "bg-primary text-primary-foreground font-bold shadow-large hover:bg-primary-hover hover:shadow-neon hover:scale-105 transition-all duration-300 border border-accent/20",
+        neon: "bg-gradient-electric text-white font-bold shadow-neon hover:shadow-large hover:scale-110 transition-all duration-300 animate-electric-slide bg-size-200",
+        cart: "bg-accent text-accent-foreground font-medium shadow-electric hover:shadow-neon hover:bg-accent-vibrant transition-all duration-200 hover:scale-105",
+        youth: "bg-gradient-neon text-white font-bold shadow-electric hover:shadow-neon hover:scale-105 transition-all duration-300 border border-accent-vibrant/30",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3 text-xs",
-        lg: "h-12 rounded-lg px-8 text-base",
-        xl: "h-14 rounded-lg px-10 text-lg font-semibold",
+        lg: "h-12 rounded-lg px-8 text-base font-semibold",
+        xl: "h-14 rounded-lg px-10 text-lg font-bold",
         icon: "h-10 w-10",
         "icon-sm": "h-8 w-8",
       },

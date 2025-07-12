@@ -80,13 +80,14 @@ export default function FeaturedProducts() {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
+        {/* Section Header with Electric Energy */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
-            Featured Collection
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-foreground mb-4">
+            <span className="bg-gradient-accent bg-clip-text text-transparent">ELECTRIC</span>
+            <span className="block text-accent-vibrant">COLLECTION</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Handpicked favorites from our latest arrivals. Discover pieces that define modern style.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">
+            Bold pieces that define the future of streetwear. <span className="text-accent font-bold">Handpicked by Gen-Z trendsetters.</span>
           </p>
         </div>
 
@@ -105,9 +106,9 @@ export default function FeaturedProducts() {
 
         {/* View All Button */}
         <div className="text-center">
-          <Button variant="outline" size="lg" className="group">
-            View All Products
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          <Button variant="electric" size="lg" className="group font-bold tracking-wide">
+            EXPLORE ALL DROPS
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
           </Button>
         </div>
       </div>

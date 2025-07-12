@@ -2,69 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Denvara & Co. - Premium Fashion E-commerce Design System
+/* Denvara & Co. - Bold Urban Fashion E-commerce Design System
+Modern, luxurious, youth-driven with high-tech energy
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Brand Colors - Premium Fashion Theme */
-    --background: 0 0% 100%;
-    --foreground: 220 26% 14%;
+    /* Brand Colors - Bold Urban Fashion Theme */
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 220 26% 14%;
+    --card-foreground: 240 10% 3.9%;
 
     /* Interactive Elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 220 26% 14%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* Primary Brand - Deep Navy */
-    --primary: 220 26% 14%;
+    /* Primary Brand - Electric Black */
+    --primary: 240 10% 3.9%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 220 26% 18%;
+    --primary-hover: 240 5% 6%;
 
-    /* Secondary - Warm Neutral */
-    --secondary: 20 14% 96%;
-    --secondary-foreground: 220 26% 14%;
+    /* Secondary - Cool Gray */
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
 
     /* Muted Tones */
-    --muted: 20 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
 
-    /* Accent - Gold Luxury */
-    --accent: 41 67% 52%;
-    --accent-foreground: 220 26% 14%;
-    --accent-muted: 41 67% 52% / 0.1;
+    /* Accent - Electric Purple (Youth Energy) */
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 98%;
+    --accent-muted: 262 83% 58% / 0.1;
+    --accent-vibrant: 280 100% 70%;
+
+    /* Success - Electric Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    /* Warning - Electric Orange */
+    --warning: 25 95% 53%;
+    --warning-foreground: 0 0% 98%;
 
     /* Status Colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --success: 142 76% 36%;
-    --success-foreground: 0 0% 98%;
 
     /* UI Elements */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 220 26% 14%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262 83% 58%;
 
     /* Design System */
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     
-    /* Fashion-specific gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 26% 14%), hsl(220 26% 18%));
-    --gradient-accent: linear-gradient(135deg, hsl(41 67% 52%), hsl(41 67% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 26% 14%) 0%, hsl(220 26% 18%) 50%, hsl(41 67% 52% / 0.1) 100%);
+    /* Bold Urban Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 5% 6%));
+    --gradient-accent: linear-gradient(135deg, hsl(262 83% 58%), hsl(280 100% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%) 0%, hsl(262 83% 58%) 50%, hsl(280 100% 70%) 100%);
+    --gradient-electric: linear-gradient(45deg, hsl(262 83% 58%), hsl(280 100% 70%), hsl(25 95% 53%));
+    --gradient-neon: linear-gradient(90deg, hsl(262 83% 58%) 0%, hsl(195 100% 50%) 50%, hsl(142 76% 36%) 100%);
     
-    /* Shadows for premium feel */
-    --shadow-soft: 0 4px 6px -1px hsl(220 26% 14% / 0.1), 0 2px 4px -1px hsl(220 26% 14% / 0.06);
-    --shadow-medium: 0 10px 15px -3px hsl(220 26% 14% / 0.1), 0 4px 6px -2px hsl(220 26% 14% / 0.05);
-    --shadow-large: 0 25px 50px -12px hsl(220 26% 14% / 0.25);
+    /* Bold Shadows for tech-forward feel */
+    --shadow-soft: 0 4px 6px -1px hsl(240 10% 3.9% / 0.1), 0 2px 4px -1px hsl(240 10% 3.9% / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(240 10% 3.9% / 0.1), 0 4px 6px -2px hsl(240 10% 3.9% / 0.05);
+    --shadow-large: 0 25px 50px -12px hsl(240 10% 3.9% / 0.25);
+    --shadow-neon: 0 0 20px hsl(262 83% 58% / 0.3), 0 0 40px hsl(262 83% 58% / 0.1);
+    --shadow-electric: 0 8px 32px hsl(262 83% 58% / 0.15);
     
-    /* Animation variables */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    /* High-tech animation variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-fast: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
